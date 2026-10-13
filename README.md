@@ -1,58 +1,46 @@
-# Rooblox browser avatar
+# Rooblox — direct Studio avatar port
 
-`assets/bacon.glb` is a self-contained browser version of `Workspace.BaconHair`, the classic R6 avatar placed in Roblox Studio.
+`assets/bacon.glb` is packaged directly from the selected `Workspace.BaconHair` character's native Roblox Studio OBJ export. It replaces the earlier reconstructed model.
 
-The model includes the actual Pal Hair mesh and texture, blue motorcycle shirt, dark green jeans, and classic smile. Textures are embedded in the GLB; it makes no Roblox asset requests when loaded in the browser.
+The source geometry, triangle order, vertex normals, UVs, and Studio-composited appearance are retained. The `1024 × 512` PNG is embedded byte-for-byte. No body primitives were rebuilt, no head shape was inferred, no face plane was added, and no clothing atlas was redrawn or resampled.
 
-## Import into a Three.js game
+## Load in Three.js
 
 ```js
 import { loadBacon } from './load-bacon.js';
 
 const { avatar, joints } = await loadBacon(scene, './assets/bacon.glb');
-avatar.position.set(0, 0, 0);
 ```
 
-One model unit corresponds to one Roblox stud. Feet start at `y = 0`, the exported model uses glTF's Y-up coordinates, and the character faces `-Z`.
-
-Named rigid joint nodes are `RootJoint`, `Neck`, `Left_Shoulder`, `Right_Shoulder`, `Left_Hip`, and `Right_Hip`. Body meshes are separate, so these pivots can drive R6 movement animations. This is a rest-pose model with rigid pivot nodes, not a skinned avatar or a copy of Roblox's animation scripts. Walking, jumping, collisions, Humanoid behavior, and camera control must be implemented by the browser game.
-
-## Hosting URLs
-
-GitHub Raw:
+Stable URLs can use a commit SHA in place of `main`:
 
 ```text
 https://raw.githubusercontent.com/evified/rooblox/main/assets/bacon.glb
-```
-
-GitHub through jsDelivr:
-
-```text
 https://cdn.jsdelivr.net/gh/evified/rooblox@main/assets/bacon.glb
 ```
 
-For stable releases, replace `main` with the desired commit SHA. If the game is hosted with this repository's assets, prefer the relative `./assets/bacon.glb` URL. Remote hosting must permit browser requests through CORS and the game's content security policy.
+The asset has seven visible meshes and 2,628 triangles. One unit remains one Roblox stud; a single translation places the feet at the origin. Native Motor6D/Weld C0/C1 values and rest transforms are retained as rigid joint nodes. The selected source model is R6 with peach skin; online bacon references also show white-skin R15 variants, which are different avatars.
 
-## Preview locally
+## Source and verification
 
-Serve this directory over HTTP, then open `viewer.html`:
+- `source/bacon-studio.obj`, `.mtl`, and `Handle1_diff.png`: original Studio export.
+- `source/BaconHair.rbxm`: selected character serialized through the Studio MCP.
+- `source/studio-metadata.json`: source transforms, joint frames, material settings, and Lighting values.
+- `tools/port-native.py`: deterministic OBJ-to-GLB packaging.
+- `tools/verify-data.py`: independent verification of every triangle corner and the embedded image.
+- `audit/round-trip-verification.json`: 7,884 checked triangle corners and the texture byte comparison.
+- `QUALITY-AUDIT.md`: differences found, corrections made, and remaining renderer differences.
+- `audit/comparison.png`: Studio, previous model, and direct port under aligned front cameras.
+- `audit/views/`: unchanged Studio and browser screenshots for all five reference angles.
+
+The maximum source-to-GLB position difference is under `6e-8` studs from float32 encoding. This is an appearance/geometry port with source joint frames, not a port of executable Humanoid, physics, Animate, or PlayerModule code. No animation clips are claimed.
+
+## Preview
+
+Serve the repository over HTTP and open `viewer.html`:
 
 ```sh
 python -m http.server 8080
 ```
 
-The viewer uses Three.js 0.180.0 from jsDelivr. It is an asset preview, not the full browser game.
-
-## Source assets and conversion
-
-The character's part dimensions, rest pose, body colors, and Motor6D joint positions were read from the selected Studio model. Native R6 body primitives and classic clothing UV regions were rebuilt for glTF; the hair and rounded head use their original mesh geometry. The facial image is applied as a transparent decal.
-
-Original Roblox assets:
-
-- Pal Hair accessory: `63690008`
-- Hair mesh: `83293901`; hair texture: `6858317867`
-- Shirt: `144076358`; shirt texture: `144076357`
-- Pants: `144076760`; pants texture: `144076759`
-- Head mesh and smile: Roblox Studio's built-in content
-
-These original assets belong to their respective creators. Conversion does not transfer ownership or grant a new license.
+Front, back, side, and three-quarter buttons use the same cameras as the captured Studio reference images. The texture-colors button displays the unchanged atlas without lighting. The lit preview approximates Studio's outdoor lighting; Roblox and Three.js use different lighting, shadow, antialiasing, and material pipelines, so rendered screenshots are not claimed to be identical pixels.

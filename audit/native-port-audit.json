@@ -1,0 +1,167 @@
+{
+  "source": "Native Roblox Studio Export Selection OBJ + its unchanged PNG",
+  "sourceFiles": {
+    "bacon-studio.obj": "eac2243e4e04c90c0d3e29d73ce34024322a7ead4f60e02056f66735e2edf582",
+    "bacon-studio.mtl": "7e9a930da7a6aca36f57c622004b6c0fda2a831a96bec8c93bf003784af3763b",
+    "Handle1_diff.png": "c515a121ae42a4d233cc739230db900dbc597421c4050230c3cff8b7f4e11782"
+  },
+  "embeddedTextureSHA256": "c515a121ae42a4d233cc739230db900dbc597421c4050230c3cff8b7f4e11782",
+  "originShiftStuds": [
+    7.0,
+    15.5,
+    0.0
+  ],
+  "meshCount": 7,
+  "triangleCount": 2628,
+  "parts": [
+    {
+      "sourceGroup": "Handle1",
+      "part": "Handle",
+      "triangles": 1562,
+      "indexedVertices": 1342,
+      "sourceBounds": {
+        "min": [
+          6.10046,
+          19.6691,
+          -1.01876
+        ],
+        "max": [
+          7.86029,
+          20.9941,
+          0.929412
+        ]
+      },
+      "maxPositionErrorStuds": 5.744743347690928e-08,
+      "maxNormalError": 2.9767712295125648e-08,
+      "maxUVError": 2.979278565518051e-08
+    },
+    {
+      "sourceGroup": "Baconhair1",
+      "part": "Right Leg",
+      "triangles": 44,
+      "indexedVertices": 42,
+      "sourceBounds": {
+        "min": [
+          7.0,
+          15.5,
+          -0.5
+        ],
+        "max": [
+          8.0,
+          17.5,
+          0.5
+        ]
+      },
+      "maxPositionErrorStuds": 2.3841870699925494e-09,
+      "maxNormalError": 0.0,
+      "maxUVError": 1.9668579098741645e-08
+    },
+    {
+      "sourceGroup": "Baconhair2",
+      "part": "Left Leg",
+      "triangles": 44,
+      "indexedVertices": 42,
+      "sourceBounds": {
+        "min": [
+          6.0,
+          15.5,
+          -0.5
+        ],
+        "max": [
+          7.0,
+          17.5,
+          0.5
+        ]
+      },
+      "maxPositionErrorStuds": 2.3841870699925494e-09,
+      "maxNormalError": 0.0,
+      "maxUVError": 2.545928956543264e-08
+    },
+    {
+      "sourceGroup": "Baconhair3",
+      "part": "Right Arm",
+      "triangles": 44,
+      "indexedVertices": 42,
+      "sourceBounds": {
+        "min": [
+          8.0,
+          17.5,
+          -0.5
+        ],
+        "max": [
+          9.0,
+          19.5,
+          0.5
+        ]
+      },
+      "maxPositionErrorStuds": 2.3841870699925494e-09,
+      "maxNormalError": 0.0,
+      "maxUVError": 1.9668579098741645e-08
+    },
+    {
+      "sourceGroup": "Baconhair4",
+      "part": "Left Arm",
+      "triangles": 44,
+      "indexedVertices": 42,
+      "sourceBounds": {
+        "min": [
+          5.0,
+          17.5,
+          -0.5
+        ],
+        "max": [
+          6.0,
+          19.5,
+          0.5
+        ]
+      },
+      "maxPositionErrorStuds": 2.3841870699925494e-09,
+      "maxNormalError": 0.0,
+      "maxUVError": 2.3162841783497257e-08
+    },
+    {
+      "sourceGroup": "Baconhair5",
+      "part": "Torso",
+      "triangles": 44,
+      "indexedVertices": 42,
+      "sourceBounds": {
+        "min": [
+          6.0,
+          17.5,
+          -0.5
+        ],
+        "max": [
+          8.0,
+          19.5,
+          0.5
+        ]
+      },
+      "maxPositionErrorStuds": 2.3841870699925494e-09,
+      "maxNormalError": 0.0,
+      "maxUVError": 1.7372131344561836e-08
+    },
+    {
+      "sourceGroup": "Baconhair6",
+      "part": "Head",
+      "triangles": 846,
+      "indexedVertices": 517,
+      "sourceBounds": {
+        "min": [
+          6.40108,
+          19.3988,
+          -0.598925
+        ],
+        "max": [
+          7.59892,
+          20.6012,
+          0.598925
+        ]
+      },
+      "maxPositionErrorStuds": 2.9159545889001492e-08,
+      "maxNormalError": 2.8533935547692124e-08,
+      "maxUVError": 2.970123291756721e-08
+    }
+  ],
+  "engineVersion": "0.742.0.7421053",
+  "generator": "Direct packaging of Roblox Studio Export Selection OBJ"
+}

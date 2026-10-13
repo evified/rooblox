@@ -1,73 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Bacon avatar preview</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Native Studio bacon avatar</title>
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, sans-serif; background: #dce4ed; color: #233247; }
-    canvas { display: block; width: 100vw; height: 100dvh; }
-    .info { position: absolute; top: 20px; left: 24px; right: 24px; pointer-events: none; }
-    h1 { font-size: 22px; margin: 0 0 5px; font-weight: 600; }
-    p { margin: 4px 0; font-size: 14px; }
-    #status { color: #42536b; }
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:#c9dce7;color:#213246}
+    canvas{display:block;width:100vw;height:100dvh}.info{position:absolute;top:20px;left:24px;right:24px}
+    h1{font-size:21px;font-weight:600;margin:0 0 4px}p{font-size:13px;margin:5px 0}.controls{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+    button{font:inherit;font-size:13px;border:1px solid #819bad;border-radius:5px;background:#e9f1f6;color:#213246;padding:7px 10px;cursor:pointer}
+    button[aria-pressed=true]{background:#213246;color:#fff}#texture-toggle{margin-left:8px}#status{color:#415a6e}
   </style>
-  <script type="importmap">
-    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}
-  </script>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}</script>
 </head>
 <body>
-  <div class="info"><h1>Bacon Hair · R6</h1><p>Drag to orbit · Scroll to zoom</p><p id="status" role="status">Loading avatar…</p></div>
+  <div class="info"><h1>Bacon Hair · native Studio export</h1><p id="status" role="status">Loading…</p>
+    <div class="controls" aria-label="Reference camera angles">
+      <button data-view="front">Front</button><button data-view="back">Back</button><button data-view="left">Left</button><button data-view="right">Right</button><button data-view="three-quarter" aria-pressed="true">Three-quarter</button>
+      <button id="texture-toggle" aria-pressed="false">Texture colors</button>
+    </div>
+  </div>
   <script type="module">
     import * as THREE from 'three';
     import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
     import { loadBacon } from './load-bacon.js';
-
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xdce4ed);
-    const camera = new THREE.PerspectiveCamera(40, innerWidth / innerHeight, 0.1, 100);
-    camera.position.set(7, 5.5, -11);
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-    renderer.setSize(innerWidth, innerHeight);
-    renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    document.body.append(renderer.domElement);
-    const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(0, 2.7, 0);
-    controls.enableDamping = true;
-    controls.minDistance = 5;
-    controls.maxDistance = 25;
-    controls.maxPolarAngle = Math.PI * 0.49;
-    scene.add(new THREE.HemisphereLight(0xffffff, 0xa6b2c2, 2));
-    const key = new THREE.DirectionalLight(0xffffff, 3);
-    key.position.set(-4, 9, -6); key.castShadow = true;
-    key.shadow.mapSize.set(2048, 2048);
-    key.shadow.camera.left = -6; key.shadow.camera.right = 6;
-    key.shadow.camera.top = 8; key.shadow.camera.bottom = -6;
-    key.shadow.normalBias = 0.02;
-    scene.add(key);
-    const floor = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.MeshStandardMaterial({color: 0xc8d3e0, roughness: 1}));
-    floor.rotation.x = -Math.PI / 2;
-    floor.position.y = -0.02;
-    floor.receiveShadow = true;
-    scene.add(floor);
-    try {
-      const bacon = await loadBacon(scene);
-      document.getElementById('status').textContent = 'Loaded · embedded textures · joint pivots ready';
-      window.baconPreview = {scene, camera, renderer, bacon};
-      window.avatarReady = true;
-    } catch (error) {
-      document.getElementById('status').textContent = 'Could not load avatar: ' + error.message;
-      console.error(error);
-    }
-    addEventListener('resize', () => {
-      camera.aspect = innerWidth / innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(innerWidth, innerHeight);
-    });
-    renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+    const reference=await fetch('./assets/studio-reference.json').then(r=>r.json());
+    const scene=new THREE.Scene();scene.background=new THREE.Color(0xa9c9d9);
+    const camera=new THREE.PerspectiveCamera(35,innerWidth/innerHeight,.1,100);
+    const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+    renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;document.body.append(renderer.domElement);
+    const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.minDistance=5;controls.maxDistance=25;controls.maxPolarAngle=Math.PI*.49;
+    const hemi=new THREE.HemisphereLight(0xa3e0ff,0x7699c4,3.5);scene.add(hemi);
+    const ambient=new THREE.AmbientLight(0xffffff,.7);scene.add(ambient);
+    const sun=new THREE.DirectionalLight(0xffffff,2.0);sun.position.fromArray(reference.lighting.sunDirection).multiplyScalar(30);sun.castShadow=true;
+    sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-7;sun.shadow.camera.right=7;sun.shadow.camera.top=8;sun.shadow.camera.bottom=-7;sun.shadow.normalBias=.015;scene.add(sun);
+    const floor=new THREE.Mesh(new THREE.PlaneGeometry(80,80),new THREE.MeshStandardMaterial({color:0xaab9c7,roughness:1}));floor.rotation.x=-Math.PI/2;floor.position.y=-.02;floor.receiveShadow=true;scene.add(floor);
+    function setView(name){const view=reference.views[name];camera.position.fromArray(view.position);camera.fov=view.fov;camera.updateProjectionMatrix();controls.target.fromArray(view.target);controls.update();document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===name)));}
+    document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));setView('three-quarter');
+    try{
+      const bacon=await loadBacon(scene);const meshes=[];
+      bacon.avatar.traverse(o=>{if(o.isMesh){meshes.push(o);o.userData.litMaterial=o.material;o.userData.textureMaterial=new THREE.MeshBasicMaterial({map:o.material.map});}});
+      document.getElementById('texture-toggle').addEventListener('click',()=>{const button=document.getElementById('texture-toggle');const unlit=button.getAttribute('aria-pressed')!=='true';button.setAttribute('aria-pressed',String(unlit));meshes.forEach(m=>m.material=unlit?m.userData.textureMaterial:m.userData.litMaterial);});
+      document.getElementById('status').textContent='Original geometry, UVs, normals, and Studio-baked texture · drag to orbit';
+      window.baconPreview={scene,camera,renderer,controls,bacon,meshes,floor,setView,reference,THREE};window.avatarReady=true;
+    }catch(error){document.getElementById('status').textContent=error.message;console.error(error);}
+    addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
+    renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera);});
   </script>
 </body>
 </html>

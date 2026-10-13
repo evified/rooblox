@@ -1,0 +1,129 @@
+{
+  "lighting": {
+    "ExposureCompensation": 0,
+    "ColorShift_Bottom": [
+      0,
+      0,
+      0
+    ],
+    "sunDirection": [
+      -0.558276355266571,
+      0.727559506893158,
+      -0.39872872829437256
+    ],
+    "GlobalShadows": true,
+    "EnvironmentSpecularScale": 1,
+    "GeographicLatitude": 0,
+    "Ambient": [
+      0.27450981736183167,
+      0.27450981736183167,
+      0.27450981736183167
+    ],
+    "OutdoorAmbient": [
+      0.27450981736183167,
+      0.27450981736183167,
+      0.27450981736183167
+    ],
+    "EnvironmentDiffuseScale": 1,
+    "Brightness": 3,
+    "ColorShift_Top": [
+      0,
+      0,
+      0
+    ],
+    "ClockTime": 14.5
+  },
+  "views": {
+    "front": {
+      "position": [
+        0,
+        2.75,
+        -12
+      ],
+      "target": [
+        0,
+        2.75,
+        0
+      ],
+      "fov": 35,
+      "size": [
+        1290,
+        726
+      ]
+    },
+    "back": {
+      "position": [
+        0,
+        2.75,
+        12
+      ],
+      "target": [
+        0,
+        2.75,
+        0
+      ],
+      "fov": 35,
+      "size": [
+        1290,
+        726
+      ]
+    },
+    "left": {
+      "position": [
+        -12,
+        2.75,
+        0
+      ],
+      "target": [
+        0,
+        2.75,
+        0
+      ],
+      "fov": 35,
+      "size": [
+        1290,
+        726
+      ]
+    },
+    "right": {
+      "position": [
+        12,
+        2.75,
+        0
+      ],
+      "target": [
+        0,
+        2.75,
+        0
+      ],
+      "fov": 35,
+      "size": [
+        1290,
+        726
+      ]
+    },
+    "three-quarter": {
+      "position": [
+        7,
+        4.5,
+        -10
+      ],
+      "target": [
+        0,
+        2.75,
+        0
+      ],
+      "fov": 35,
+      "size": [
+        1290,
+        726
+      ]
+    }
+  },
+  "atlas": {
+    "width": 1024,
+    "height": 512
+  },
+  "source": "Native Roblox Studio OBJ export",
+  "engineVersion": "0.742.0.7421053"
+}

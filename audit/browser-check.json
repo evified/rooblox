@@ -1,0 +1,45 @@
+{
+  "meshes": [
+    {
+      "name": "Torso",
+      "triangles": 44
+    },
+    {
+      "name": "Right_Arm",
+      "triangles": 44
+    },
+    {
+      "name": "Left_Arm",
+      "triangles": 44
+    },
+    {
+      "name": "Right_Leg",
+      "triangles": 44
+    },
+    {
+      "name": "Left_Leg",
+      "triangles": 44
+    },
+    {
+      "name": "Head",
+      "triangles": 846
+    },
+    {
+      "name": "Handle",
+      "triangles": 1562
+    }
+  ],
+  "joints": {
+    "root": true,
+    "neck": true,
+    "leftShoulder": true,
+    "rightShoulder": true,
+    "leftHip": true,
+    "rightHip": true
+  },
+  "bounds": [
+    4,
+    5.494099981403928,
+    1.948171973228455
+  ]
+}

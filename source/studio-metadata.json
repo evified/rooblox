@@ -1,0 +1,579 @@
+{
+  "camera": {
+    "type": "Fixed",
+    "focus": [
+      4.144290447235107,
+      21.95263671875,
+      -6.713932037353516,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "viewport": [
+      1918,
+      1080,
+      0
+    ],
+    "cframe": [
+      3.4603230953216553,
+      23.514083862304688,
+      -7.759912967681885,
+      -0.8369488716125488,
+      0.4272750914096832,
+      -0.34198346734046936,
+      1.4901162970204496e-08,
+      0.6248771548271179,
+      0.7807230949401855,
+      0.5472812056541443,
+      0.6534253358840942,
+      -0.5229901671409607
+    ],
+    "fov": 70
+  },
+  "name": "BaconHair",
+  "lighting": {
+    "ExposureCompensation": 0,
+    "ColorShift_Bottom": [
+      0,
+      0,
+      0
+    ],
+    "sunDirection": [
+      -0.558276355266571,
+      0.727559506893158,
+      -0.39872872829437256
+    ],
+    "GlobalShadows": true,
+    "EnvironmentSpecularScale": 1,
+    "GeographicLatitude": 0,
+    "Ambient": [
+      0.27450981736183167,
+      0.27450981736183167,
+      0.27450981736183167
+    ],
+    "OutdoorAmbient": [
+      0.27450981736183167,
+      0.27450981736183167,
+      0.27450981736183167
+    ],
+    "EnvironmentDiffuseScale": 1,
+    "Brightness": 3,
+    "ColorShift_Top": [
+      0,
+      0,
+      0
+    ],
+    "ClockTime": 14.5
+  },
+  "worldPivot": [
+    7,
+    18.499996185302734,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "engineVersion": "0.742.0.7421053",
+  "joints": [
+    {
+      "part1": "Right Arm",
+      "name": "Right Shoulder",
+      "part0": "Torso",
+      "class": "Motor6D",
+      "c1": [
+        -0.5,
+        0.5,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "c0": [
+        1,
+        0.5,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "part1": "Left Arm",
+      "name": "Left Shoulder",
+      "part0": "Torso",
+      "class": "Motor6D",
+      "c1": [
+        0.5,
+        0.5,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "c0": [
+        -1,
+        0.5,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "part1": "Right Leg",
+      "name": "Right Hip",
+      "part0": "Torso",
+      "class": "Motor6D",
+      "c1": [
+        0.5,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "c0": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "part1": "Left Leg",
+      "name": "Left Hip",
+      "part0": "Torso",
+      "class": "Motor6D",
+      "c1": [
+        -0.5,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "c0": [
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "part1": "Head",
+      "name": "Neck",
+      "part0": "Torso",
+      "class": "Motor6D",
+      "c1": [
+        0,
+        -0.5,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "c0": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "part1": "Torso",
+      "name": "RootJoint",
+      "part0": "HumanoidRootPart",
+      "class": "Motor6D",
+      "c1": [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "c0": [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "part1": "Head",
+      "name": "AccessoryWeld",
+      "part0": "Handle",
+      "class": "Weld",
+      "c1": [
+        0,
+        0.6000000238418579,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "c0": [
+        8.657480066176504e-09,
+        0.34999990463256836,
+        0.2497277557849884,
+        1,
+        7.871374663181996e-09,
+        -3.262230143902005e-24,
+        -7.871374663181996e-09,
+        1,
+        -4.1444220966321485e-16,
+        1.9721522630525295e-31,
+        4.1444220966321485e-16,
+        1
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "transparency": 0,
+      "path": "Workspace.BaconHair.Head",
+      "name": "Head",
+      "worldCFrame": [
+        7,
+        19.999996185302734,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.9176470637321472,
+        0.7215686440467834,
+        0.572549045085907
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "transparency": 0,
+      "path": "Workspace.BaconHair.Torso",
+      "name": "Torso",
+      "worldCFrame": [
+        7,
+        18.499996185302734,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.9176470637321472,
+        0.7215686440467834,
+        0.572549045085907
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "transparency": 0,
+      "path": "Workspace.BaconHair.Left Arm",
+      "name": "Left Arm",
+      "worldCFrame": [
+        5.5,
+        18.499996185302734,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.9176470637321472,
+        0.7215686440467834,
+        0.572549045085907
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "transparency": 0,
+      "path": "Workspace.BaconHair.Right Arm",
+      "name": "Right Arm",
+      "worldCFrame": [
+        8.5,
+        18.499996185302734,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.9176470637321472,
+        0.7215686440467834,
+        0.572549045085907
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "transparency": 0,
+      "path": "Workspace.BaconHair.Left Leg",
+      "name": "Left Leg",
+      "worldCFrame": [
+        6.5,
+        16.499996185302734,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.9176470637321472,
+        0.7215686440467834,
+        0.572549045085907
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "transparency": 0,
+      "path": "Workspace.BaconHair.Right Leg",
+      "name": "Right Leg",
+      "worldCFrame": [
+        7.5,
+        16.499996185302734,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.9176470637321472,
+        0.7215686440467834,
+        0.572549045085907
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "transparency": 1,
+      "path": "Workspace.BaconHair.HumanoidRootPart",
+      "name": "HumanoidRootPart",
+      "worldCFrame": [
+        7,
+        18.499996185302734,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "transparency": 0,
+      "path": "Workspace.BaconHair.Pal Hair.Handle",
+      "name": "Handle",
+      "worldCFrame": [
+        7,
+        20.249996185302734,
+        -0.2497277557849884,
+        1,
+        -7.871374663181996e-09,
+        1.9721522630525295e-31,
+        7.871374663181996e-09,
+        1,
+        4.1444220966321485e-16,
+        -3.262230143902005e-24,
+        -4.1444220966321485e-16,
+        1
+      ],
+      "color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "material": "Enum.Material.Plastic",
+      "reflectance": 0,
+      "size": [
+        1,
+        1,
+        2
+      ]
+    }
+  ]
+}
