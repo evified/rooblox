@@ -3,7 +3,9 @@ import json,struct,hashlib
 import numpy as np
 from pathlib import Path
 from collections import defaultdict
-ROOT=Path(__file__).parent
+ROOT=Path(__file__).resolve().parent
+if not (ROOT/'source'/'bacon-studio.obj').is_file():
+    ROOT=ROOT.parent
 raw=(ROOT/'assets/bacon.glb').read_bytes()
 assert struct.unpack_from('<III',raw)==(0x46546c67,2,len(raw))
 length,kind=struct.unpack_from('<II',raw,12);assert kind==0x4e4f534a

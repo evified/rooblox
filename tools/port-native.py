@@ -4,7 +4,9 @@ from pathlib import Path
 from collections import OrderedDict,deque
 import numpy as np
 
-ROOT=Path(__file__).parent
+ROOT=Path(__file__).resolve().parent
+if not (ROOT/'source'/'bacon-studio.obj').is_file():
+    ROOT=ROOT.parent
 SOURCE=ROOT/'source'
 OUT=ROOT/'assets'; OUT.mkdir(exist_ok=True)
 meta=json.loads((SOURCE/'studio-metadata.json').read_text())

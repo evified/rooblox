@@ -33,7 +33,7 @@ Paired reference captures:
 | Clothing resolution and seams | Cropped and resized clothing into a new 792 × 660 atlas, introducing resampling and an independently assigned seam layout. | Original 1024 × 512 Studio atlas is embedded unchanged. |
 | Body/skin/face composition | Composited separately by the conversion code. | Uses Studio's own complete baked appearance. |
 | Hair appearance | Used a separately fetched raw hair texture and generic material settings. | Uses the hair region that Studio produced in the same native atlas as the character. Hair mesh remains all 1,562 source triangles. |
-| Material tint | A generic reconstructed material pipeline; naïvely importing MTL Kd could also multiply the already-baked body color twice. | A white base-color multiplier preserves the exported PNG color; no second skin or accessory-color bake. |
+| Material tint | Body color, clothing, and hair were handled with independently chosen materials and separate image composition. | The complete Studio-baked appearance uses a white base-color multiplier, preserving its already-composited skin and accessory colors. |
 | Joint structure | Added simplified translated pivot nodes without all original C0/C1 orientation and accessory weld information. | Carries actual Motor6D and AccessoryWeld frames and source rest transforms from Studio. |
 | Camera evidence | Initial browser and Studio views were different cameras, projections, angles, and environments. | Five matched cameras are included; model-space data is independently compared. |
 | Lighting evidence | Initial browser light direction, ambient balance, and brightness were arbitrary. | Uses Studio's captured sun direction and a calibrated outdoor-light approximation; remaining engine differences are explicit. |
