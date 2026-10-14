@@ -1,5 +1,7 @@
 # Rooblox — Bacon baseplate and direct Studio avatar port
 
+[Play the baseplate](https://rooblox-bacon-baseplate.sturdygrebe2.chatgpt.site) (owner-private Site).
+
 Open `index.html` over HTTP for the playable baseplate. WASD/arrows move, Space jumps, dragging orbits, scrolling zooms, and Shift toggles mouse lock. Touch controls are included. The animation menu exposes every captured R6 default clip and variant. Copy settings includes the original comprehensive property capture as well as this character's actual settings.
 
 The baseplate is 2048 × 16 × 2048 studs, matching the source place. Movement uses 16 studs/s, gravity 196.1999969482422 studs/s², and the place's height-based 7.199999809265137-stud jump setting. The display rig itself has UseJumpPower=true and an anchored root; the playable controller uses StarterPlayer.CharacterUseJumpPower=false and allows movement. Camera FOV=70, zoom=0.5–128, health=100, fall destruction height=-500, and respawn delay=3 seconds come from the capture.
