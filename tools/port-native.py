@@ -56,6 +56,9 @@ gltf['images'].append({'name':'Studio baked appearance atlas','mimeType':'image/
 # Studio has already baked each part's body color into the atlas. Multiplying
 # by the MTL Kd color a second time would incorrectly tint skin and clothing.
 gltf['materials'].append({'name':'Studio appearance atlas','pbrMetallicRoughness':{'baseColorTexture':{'index':0},'baseColorFactor':[1,1,1,1],'metallicFactor':0,'roughnessFactor':1},'alphaMode':'OPAQUE','doubleSided':False,'extras':{'colorBakedByStudio':True}})
+# Legacy hair contains open strand surfaces. Preserve every source triangle,
+# while keeping the reverse-facing strand surfaces visible in browser rendering.
+gltf['materials'].append({**gltf['materials'][0],'name':'Studio hair strand surfaces','doubleSided':True})
 
 nodes=gltf['nodes'];part_nodes={};world_nodes={0:np.eye(4)}
 def node(name,matrix,parent):
@@ -102,7 +105,7 @@ for group,record in groups.items():
     source_uv=uvs[[k[1] for k in keys]]
     # OBJ UV origin is bottom-left; glTF UV origin is top-left.
     gltf_uv=source_uv.copy();gltf_uv[:,1]=1-source_uv[:,1]
-    primitive={'attributes':{'POSITION':accessor(local_p,'VEC3'),'NORMAL':accessor(local_n,'VEC3'),'TEXCOORD_0':accessor(gltf_uv,'VEC2')},'indices':accessor(np.array(triangles),'SCALAR',5125,34963),'material':0,'mode':4}
+    primitive={'attributes':{'POSITION':accessor(local_p,'VEC3'),'NORMAL':accessor(local_n,'VEC3'),'TEXCOORD_0':accessor(gltf_uv,'VEC2')},'indices':accessor(np.array(triangles),'SCALAR',5125,34963),'material':1 if part=='Handle' else 0,'mode':4}
     mesh_index=len(gltf['meshes']);gltf['meshes'].append({'name':part.replace(' ','_'),'primitives':[primitive],'extras':{'nativeObjGroup':group}})
     nodes[part_nodes[part]]['mesh']=mesh_index
     meshworld=world_nodes[part_nodes[part]]

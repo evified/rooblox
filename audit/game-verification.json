@@ -1,0 +1,30 @@
+{
+  "clips": 23,
+  "animationOptions": 25,
+  "posesCompared": 3006,
+  "maxPoseMatrixError": 0,
+  "walkDistance": 15.999999999999982,
+  "walkSpeed": 1.103448275862069,
+  "walkAnimation": "180426354",
+  "jumpHeight": 7.198362137734091,
+  "jumpDuration": 0.5500000000000005,
+  "sawFall": true,
+  "diagonalDistance": 15.999999999999968,
+  "died": true,
+  "respawned": true,
+  "hairDoubleSided": true,
+  "textureAnisotropy": 16,
+  "pixelRatio": 2,
+  "cameraFov": 70,
+  "baseplateSize": [
+    2048,
+    16,
+    2048
+  ],
+  "pageErrors": [],
+  "everyMenuClipPlayed": true,
+  "keyboardJumpAndShiftLock": true,
+  "clipboardFullCapture": true,
+  "mobileTouchJump": true,
+  "emoteReturnsToIdle": true
+}

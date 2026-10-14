@@ -10,7 +10,7 @@
     button{font:inherit;font-size:13px;border:1px solid #819bad;border-radius:5px;background:#e9f1f6;color:#213246;padding:7px 10px;cursor:pointer}
     button[aria-pressed=true]{background:#213246;color:#fff}#texture-toggle{margin-left:8px}#status{color:#415a6e}
   </style>
-  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}</script>
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body>
   <div class="info"><h1>Bacon Hair · native Studio export</h1><p id="status" role="status">Loading…</p>
@@ -26,7 +26,7 @@
     const reference=await fetch('./assets/studio-reference.json').then(r=>r.json());
     const scene=new THREE.Scene();scene.background=new THREE.Color(0xa9c9d9);
     const camera=new THREE.PerspectiveCamera(35,innerWidth/innerHeight,.1,100);
-    const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);
+    const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,3));renderer.setSize(innerWidth,innerHeight);
     renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;document.body.append(renderer.domElement);
     const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.minDistance=5;controls.maxDistance=25;controls.maxPolarAngle=Math.PI*.49;
     const hemi=new THREE.HemisphereLight(0xa3e0ff,0x7699c4,3.5);scene.add(hemi);
@@ -38,7 +38,7 @@
     document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));setView('three-quarter');
     try{
       const bacon=await loadBacon(scene);const meshes=[];
-      bacon.avatar.traverse(o=>{if(o.isMesh){meshes.push(o);o.userData.litMaterial=o.material;o.userData.textureMaterial=new THREE.MeshBasicMaterial({map:o.material.map});}});
+      bacon.avatar.traverse(o=>{if(o.isMesh){meshes.push(o);o.material.map.anisotropy=renderer.capabilities.getMaxAnisotropy();o.material.map.needsUpdate=true;o.userData.litMaterial=o.material;o.userData.textureMaterial=new THREE.MeshBasicMaterial({map:o.material.map,side:o.material.side});}});
       document.getElementById('texture-toggle').addEventListener('click',()=>{const button=document.getElementById('texture-toggle');const unlit=button.getAttribute('aria-pressed')!=='true';button.setAttribute('aria-pressed',String(unlit));meshes.forEach(m=>m.material=unlit?m.userData.textureMaterial:m.userData.litMaterial);});
       document.getElementById('status').textContent='Original geometry, UVs, normals, and Studio-baked texture · drag to orbit';
       window.baconPreview={scene,camera,renderer,controls,bacon,meshes,floor,setView,reference,THREE};window.avatarReady=true;

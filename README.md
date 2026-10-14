@@ -1,4 +1,8 @@
-# Rooblox — direct Studio avatar port
+# Rooblox — Bacon baseplate and direct Studio avatar port
+
+Open `index.html` over HTTP for the playable baseplate. WASD/arrows move, Space jumps, dragging orbits, scrolling zooms, and Shift toggles mouse lock. Touch controls are included. The animation menu exposes every captured R6 default clip and variant. Copy settings includes the original comprehensive property capture as well as this character's actual settings.
+
+The baseplate is 2048 × 16 × 2048 studs, matching the source place. Movement uses 16 studs/s, gravity 196.1999969482422 studs/s², and the place's height-based 7.199999809265137-stud jump setting. The display rig itself has UseJumpPower=true and an anchored root; the playable controller uses StarterPlayer.CharacterUseJumpPower=false and allows movement. Camera FOV=70, zoom=0.5–128, health=100, fall destruction height=-500, and respawn delay=3 seconds come from the capture.
 
 `assets/bacon.glb` is packaged directly from the selected `Workspace.BaconHair` character's native Roblox Studio OBJ export. It replaces the earlier reconstructed model.
 
@@ -33,7 +37,13 @@ The asset has seven visible meshes and 2,628 triangles. One unit remains one Rob
 - `audit/comparison.png`: Studio, previous model, and direct port under aligned front cameras.
 - `audit/views/`: unchanged Studio and browser screenshots for all five reference angles.
 
-The maximum source-to-GLB position difference is under `6e-8` studs from float32 encoding. This is an appearance/geometry port with source joint frames, not a port of executable Humanoid, physics, Animate, or PlayerModule code. No animation clips are claimed.
+The maximum source-to-GLB position difference is under `6e-8` studs from float32 encoding. `assets/animations.json` contains all 23 actual KeyframeSequences extracted in Studio. `source/Animate.luau` is the unmodified source script, with its configured child overrides captured in `assets/game-config.json`. `animation-player.js` applies native poses through the original C0/C1 hierarchy; no motions are authored by hand. All captured poses use Linear easing and weight 1. Browser validation checks all 3,006 animated joint keyframe transforms with zero matrix difference. Walk playback follows the source script's speed/14.5 scaling; climbing follows speed/12, idle selection uses 9:1 weights, jump lasts 0.3 seconds before fall, and the relevant transition times are retained. Non-looping emotes return to idle; movement interrupts previews.
+
+R6 uses the walking clip for run; its default script has no separate swim clip. The menu includes sit, climb, tools, and emotes for animation testing. This deliberately simple baseplate has no ladders, seats, water, or weapons. The browser implements a flat-ground controller, camera, and selected Animate behavior; it does not execute Roblox's proprietary Humanoid physics, PlayerModule, terrain, networking, collisions with arbitrary objects, or full state machine. Captured properties that have no effect on this flat test remain reference data, not silently implemented engine features. Roblox lighting and between-frame engine blending are not claimed pixel-identical.
+
+Hair quality: only the hair material renders both sides of its open strand surfaces. All 1,562 native hair triangles remain unchanged. Maximum available anisotropic filtering, antialiasing, high-DPI rendering, and a 4096-pixel game shadow map improve display quality without resizing the character or altering the PNG. Three.js r180 is vendored with its license so the game makes no runtime CDN requests.
+
+`audit/game-verification.json` records the actual pose, distance, jump, death/respawn, camera, menu, and control checks. `tools/verify-game.py` exercises the browser game. `tools/extract-game.py` captures source settings and animation sequences through the Studio MCP and preserves a complete existing sequence capture. `tools/prepare-game.py` stages the static Site build from this repository.
 
 ## Preview
 

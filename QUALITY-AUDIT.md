@@ -50,4 +50,12 @@ The mesh and appearance data are direct and verified. The browser renderer is no
 
 The lit viewer was calibrated to improve the source comparison, but it does not claim identical screenshots down to the last rendered pixel. The exact pixel-level guarantee is for every byte of the exported PNG. The geometry/normal/UV guarantee is the measured float32 round-trip tolerance in `audit/round-trip-verification.json`. Texture-only viewing separates exported appearance from renderer lighting.
 
-Animation clips, Humanoid behavior, controls, collisions, and the original scene's executable code are outside a model export and are not silently claimed as ported.
+## Baseplate and animation update
+
+The hair mesh has 1,022 open OBJ edges and 210 faces whose average exported normal points opposite their geometric face winding. Single-sided browser culling could discard strand surfaces at some angles. The GLB now gives the unchanged hair a separate double-sided material; other parts retain their original single-sided rendering. The image, UVs, normals, positions, and triangle counts are unchanged. This corrects a browser rendering issue without rebuilding hair. Anisotropy and high-DPI antialiasing improve sampling; native texture resolution is retained.
+
+Studio's actual R6 Animate script and all 23 referenced animation assets are now captured. All 3,006 animated joint keyframes were compared in the browser against original C0 × Pose.CFrame matrices with zero matrix error. This validates source keyframe data and application, not a pixel-for-pixel comparison of Roblox and browser playback between frames.
+
+The playable controller uses source walk speed, gravity, height-based jumping, camera FOV/zoom, fall destruction height, health, and respawn timing. The menu provides all default R6 motions, including the nine dance variants and two idle variants. R6's run shares the walk clip and there is no separate default R6 swim clip in this source. Climbing, sitting, and tool animations can be previewed on the flat baseplate; those environments/game systems are not present.
+
+Browser physics is a flat-ground integration of the captured movement settings. Roblox's complete Humanoid solver, PlayerModule, multiplayer simulation, terrain, collision system, and all engine/service properties are not portable through a model export. The original comprehensive property capture is included by Copy settings as reference data. Full engine or rendered-pixel equivalence is not claimed.
