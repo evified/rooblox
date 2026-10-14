@@ -12,6 +12,8 @@ The controller is calibrated rather than identical to Roblox's full force solver
 
 Publication note: the existing Sites connector currently returns `Sites project not found` for the retained project ID. The accuracy follow-up was built and tested locally; the previously published URL below should not be assumed to contain these new changes until a successful deployment is recorded. The original Site identity/audience is preserved; no replacement Site was created.
 
+For an offline version that opens directly in a browser without a server, run `python tools/build-standalone.py`. It creates `Rooblox-Accuracy.html` beside this checkout, embedding the verified modules, original GLB, configuration/clip JSON, and fonts. `tools/verify-standalone.py` checks actual file-URL loading, gradual turning, Player1 chat, and zero external HTTP requests. `tools/verify-accuracy.py` remains the detailed current gameplay/UI validation; `tools/verify-game.py` is the earlier baseline interface test.
+
 [Play the baseplate](https://rooblox-bacon-baseplate.sturdygrebe2.chatgpt.site) (owner-private Site).
 
 Open `index.html` over HTTP for the playable baseplate. WASD/arrows move, Space jumps, dragging orbits, scrolling zooms, and Shift toggles mouse lock. Touch controls are included. The animation menu exposes every captured R6 default clip and variant. Copy settings includes the original comprehensive property capture as well as this character's actual settings.
