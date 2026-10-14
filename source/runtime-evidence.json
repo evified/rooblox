@@ -1,0 +1,637 @@
+{
+  "services": {
+    "ChatWindowConfiguration": {
+      "Enabled": true,
+      "FontFace": {
+        "family": "rbxasset://fonts/families/BuilderSans.json",
+        "style": "Enum.FontStyle.Normal",
+        "weight": "Enum.FontWeight.Medium"
+      },
+      "TextColor3": [
+        1,
+        1,
+        1
+      ],
+      "WidthScale": 1,
+      "TextStrokeTransparency": 0.5,
+      "BackgroundTransparency": 0.3,
+      "HeightScale": 1,
+      "TextSize": 18,
+      "BackgroundColor3": [
+        0.09803921729326248,
+        0.10588235408067703,
+        0.11372549086809158
+      ]
+    },
+    "ChatInputBarConfiguration": {
+      "Enabled": true,
+      "FontFace": {
+        "family": "rbxasset://fonts/families/BuilderSans.json",
+        "style": "Enum.FontStyle.Normal",
+        "weight": "Enum.FontWeight.Medium"
+      },
+      "TextColor3": [
+        1,
+        1,
+        1
+      ],
+      "TextStrokeTransparency": 0.5,
+      "KeyboardKeyCode": "Enum.KeyCode.Slash",
+      "BackgroundTransparency": 0.2,
+      "PlaceholderColor3": [
+        0.6980392336845398,
+        0.6980392336845398,
+        0.6980392336845398
+      ],
+      "AutocompleteEnabled": true,
+      "TextSize": 18,
+      "BackgroundColor3": [
+        0.09803921729326248,
+        0.10588235408067703,
+        0.11372549086809158
+      ]
+    },
+    "BubbleChatConfiguration": {
+      "Enabled": true,
+      "FontFace": {
+        "family": "rbxasset://fonts/families/BuilderSans.json",
+        "style": "Enum.FontStyle.Normal",
+        "weight": "Enum.FontWeight.Medium"
+      },
+      "TextColor3": [
+        0.2235294133424759,
+        0.23137255012989044,
+        0.239215686917305
+      ],
+      "MaxBubbles": 3,
+      "MinimizeDistance": 40,
+      "MaxDistance": 100,
+      "BackgroundTransparency": 0.1,
+      "BubbleDuration": 15,
+      "VerticalStudsOffset": 0,
+      "TextSize": 20,
+      "BackgroundColor3": [
+        0.9803921580314636,
+        0.9803921580314636,
+        0.9803921580314636
+      ]
+    },
+    "ChannelTabsConfiguration": {
+      "Enabled": false,
+      "FontFace": {
+        "family": "rbxasset://fonts/families/BuilderSans.json",
+        "style": "Enum.FontStyle.Normal",
+        "weight": "Enum.FontWeight.Bold"
+      },
+      "HoverBackgroundColor3": [
+        0.4901960790157318,
+        0.4901960790157318,
+        0.4901960790157318
+      ],
+      "TextStrokeTransparency": 1,
+      "BackgroundTransparency": 0,
+      "SelectedTabTextColor3": [
+        1,
+        1,
+        1
+      ],
+      "TextColor3": [
+        0.686274528503418,
+        0.686274528503418,
+        0.686274528503418
+      ],
+      "TextSize": 18,
+      "BackgroundColor3": [
+        0.09803921729326248,
+        0.10588235408067703,
+        0.11372549086809158
+      ]
+    }
+  },
+  "ui": [
+    {
+      "Visible": false,
+      "AbsoluteSize": [
+        33,
+        33
+      ],
+      "class": "ImageLabel",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "rbxasset://textures/ui/Controls/PlayStationController/ButtonCross@2x.png",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.ControlFrame.BottomLeftControl.DialogFrame.UserDialogArea.TextButton.RBXchatDialogSelectionButton",
+      "name": "RBXchatDialogSelectionButton",
+      "AbsolutePosition": [
+        17,
+        948
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": false,
+      "AbsoluteSize": [
+        33,
+        33
+      ],
+      "class": "ImageLabel",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "rbxasset://textures/ui/Controls/PlayStationController/ButtonCross@2x.png",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.ControlFrame.BottomLeftControl.DialogFrame.UserDialogArea.TextButton.RBXchatDialogSelectionButton",
+      "name": "RBXchatDialogSelectionButton",
+      "AbsolutePosition": [
+        17,
+        948
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": false,
+      "AbsoluteSize": [
+        33,
+        33
+      ],
+      "class": "ImageLabel",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "rbxasset://textures/ui/Controls/PlayStationController/ButtonCross@2x.png",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.ControlFrame.BottomLeftControl.DialogFrame.UserDialogArea.TextButton.RBXchatDialogSelectionButton",
+      "name": "RBXchatDialogSelectionButton",
+      "AbsolutePosition": [
+        17,
+        948
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": false,
+      "AbsoluteSize": [
+        33,
+        33
+      ],
+      "class": "ImageLabel",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "rbxasset://textures/ui/Controls/PlayStationController/ButtonCross@2x.png",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.ControlFrame.BottomLeftControl.DialogFrame.UserDialogArea.TextButton.RBXchatDialogSelectionButton",
+      "name": "RBXchatDialogSelectionButton",
+      "AbsolutePosition": [
+        17,
+        948
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": false,
+      "AbsoluteSize": [
+        33,
+        33
+      ],
+      "class": "ImageLabel",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "rbxasset://textures/ui/Controls/PlayStationController/ButtonCross@2x.png",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.ControlFrame.BottomLeftControl.DialogFrame.UserDialogArea.TextButton.RBXchatDialogSelectionButton",
+      "name": "RBXchatDialogSelectionButton",
+      "AbsolutePosition": [
+        17,
+        972
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.RobloxGui.AvatarContextMenu",
+      "name": "AvatarContextMenu",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        0,
+        0
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        1918,
+        993
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": false,
+      "AbsoluteSize": [
+        345,
+        300
+      ],
+      "class": "ImageButton",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "rbxasset://textures/blackBkg_round.png",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.AvatarContextMenu.Menu",
+      "name": "Menu",
+      "AbsolutePosition": [
+        786.5,
+        673.1400146484375
+      ],
+      "BackgroundColor3": [
+        0.12156862765550613,
+        0.12156862765550613,
+        0.12156862765550613
+      ]
+    },
+    {
+      "Visible": true,
+      "AbsoluteSize": [
+        17.25,
+        17.25
+      ],
+      "class": "ImageButton",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "rbxasset://textures/loading/cancelButton.png",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.AvatarContextMenu.Menu.CloseMenuButton",
+      "name": "CloseMenuButton",
+      "AbsolutePosition": [
+        1104.25,
+        683.1400146484375
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "AbsoluteSize": [
+        1240,
+        767
+      ],
+      "class": "ImageButton",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "",
+      "BackgroundTransparency": 0.30000001192092896,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer",
+      "name": "MenuContainer",
+      "AbsolutePosition": [
+        339,
+        1195.5
+      ],
+      "BackgroundColor3": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "Visible": false,
+      "path": "CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.InExperienceMenuPage",
+      "name": "InExperienceMenuPage",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        339,
+        1195.5
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        1240,
+        867
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.InExperienceMenuPage.InExperienceMenuReactPage",
+      "name": "InExperienceMenuReactPage",
+      "BackgroundTransparency": 0,
+      "AbsolutePosition": [
+        339,
+        1195.5
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        0,
+        0
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.ExperienceChat.bubbleChat.BubbleChat_11386468026.BubbleChatList",
+      "name": "BubbleChatList",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        0,
+        0
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        500,
+        200
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": false,
+      "path": "CoreGui.ExperienceChat.appLayout.chatInputRow",
+      "name": "chatInputRow",
+      "BackgroundTransparency": 0.30000001192092896,
+      "AbsolutePosition": [
+        8,
+        409.20001220703125
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        767.2000122070312,
+        0
+      ],
+      "BackgroundColor3": [
+        0.09803922474384308,
+        0.10588236153125763,
+        0.11372549831867218
+      ]
+    },
+    {
+      "Visible": false,
+      "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar",
+      "name": "chatInputBar",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        16,
+        409.20001220703125
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        751.2000122070312,
+        47.400001525878906
+      ],
+      "BackgroundColor3": [
+        0.09803922474384308,
+        0.10588236153125763,
+        0.11372549831867218
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2",
+      "name": "ChatInputBarV2",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        16,
+        409.20001220703125
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        751.2000122070312,
+        46.400001525878906
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": false,
+      "path": "CoreGui.TopBarApp.TopBarScrim.TopBarScrim",
+      "name": "TopBarScrim",
+      "BackgroundTransparency": 0.25,
+      "AbsolutePosition": [
+        0,
+        -87
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        1918,
+        1080
+      ],
+      "BackgroundColor3": [
+        0.03921568766236305,
+        0.03921568766236305,
+        0.054901961237192154
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder",
+      "name": "MenuIconHolder",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        16,
+        -48
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        1918,
+        48
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu",
+      "name": "UnibarMenu",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        97,
+        -46
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        96,
+        148
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat",
+      "name": "chat",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        145,
+        -46
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        44,
+        44
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "AbsoluteSize": [
+        36,
+        36
+      ],
+      "class": "ImageButton",
+      "ImageRectOffset": [
+        0,
+        0
+      ],
+      "Image": "",
+      "BackgroundTransparency": 1,
+      "ImageRectSize": [
+        0,
+        0
+      ],
+      "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat.IconHitArea_chat",
+      "name": "IconHitArea_chat",
+      "AbsolutePosition": [
+        149,
+        -42
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.SubMenuHost",
+      "name": "SubMenuHost",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        97,
+        6
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        0,
+        96
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    },
+    {
+      "Visible": true,
+      "path": "CoreGui.TopBarApp.TopBarApp.TopBarFrame",
+      "name": "TopBarFrame",
+      "BackgroundTransparency": 1,
+      "AbsolutePosition": [
+        0,
+        -48
+      ],
+      "class": "Frame",
+      "AbsoluteSize": [
+        1918,
+        48
+      ],
+      "BackgroundColor3": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ]
+    }
+  ],
+  "scripts": [],
+  "engine": "0.742.0.7421053",
+  "capturedAt": "2026-10-14T01:30:32Z"
+}

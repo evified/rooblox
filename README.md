@@ -1,5 +1,17 @@
 # Rooblox — Bacon baseplate and direct Studio avatar port
 
+## Accuracy follow-up (October 13, 2026)
+
+The current source adds measured gradual R6 turning, ground/air velocity response, a calibrated height-mode jump, current Studio camera framing/input/zoom behavior, and a screenshot-based Roblox-style topbar/menu/chat. Local messages use `Player1`. `/` focuses chat, Enter sends, Escape leaves chat or toggles the menu. `/e` and `/emote` play the original default emotes while standing. There is no multiplayer or remote chat transport. Global/Friends/voice/summary affordances are explicitly unavailable.
+
+Use right mouse drag to look, WASD/arrows to move, Space to jump (hold to repeat), scroll to zoom, and either Shift key for shift lock. Camera constants and input scales were captured from the current Studio modules; they are not copied from old forum examples. The character source geometry, PNG, and 23 original animation clips remain byte-for-byte unchanged in this follow-up.
+
+`ACCURACY-PLAN.md` contains the detailed five-area/twenty-five-subsection plan. `source/runtime-scripts/`, `source/movement-measurements.json`, `source/movement-repeat.json`, and `assets/fidelity-config.json` record provenance. `audit/accuracy-verification.json` records browser checks and measured residuals. `tools/verify-accuracy.py` runs against a local preview on port8766; `tools/prepare-game.py --output <directory>` creates its self-contained static build.
+
+The controller is calibrated rather than identical to Roblox's full force solver. Measured +90° turn comparison has about0.457° RMS error after accounting for plugin command scheduling. The native jump peak7.52890 studs is reproduced at about7.53558 (difference0.00668). Ground gain/capped acceleration were inferred from phase-aligned PreSimulation/PostSimulation samples at1/120s: stopping distance differs by about0.000007 studs. Six straight/diagonal start/stop comparisons have max position error below0.00025 studs and velocity error below0.000002 studs/s. The broader engine is not claimed1:1. Stable straight/diagonal speed remains16; displacement, rotation, and zoom are frame-rate consistent in the covered fixtures.
+
+Publication note: the existing Sites connector currently returns `Sites project not found` for the retained project ID. The accuracy follow-up was built and tested locally; the previously published URL below should not be assumed to contain these new changes until a successful deployment is recorded. The original Site identity/audience is preserved; no replacement Site was created.
+
 [Play the baseplate](https://rooblox-bacon-baseplate.sturdygrebe2.chatgpt.site) (owner-private Site).
 
 Open `index.html` over HTTP for the playable baseplate. WASD/arrows move, Space jumps, dragging orbits, scrolling zooms, and Shift toggles mouse lock. Touch controls are included. The animation menu exposes every captured R6 default clip and variant. Copy settings includes the original comprehensive property capture as well as this character's actual settings.

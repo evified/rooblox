@@ -1,0 +1,44 @@
+{
+  "engine": "0.742.0.7421053",
+  "source": "Measured temporary native R6 clone in Studio solo server physics; not a universal engine constant",
+  "rotation": {
+    "responseRatePerSecond": 8.77,
+    "observedPipelineDelaySeconds": 0.019399999999999997,
+    "fitRMSEDegrees": 0.28377039599829224,
+    "validation": [
+      {
+        "trial": "turn_45",
+        "rmseDegrees": 0.09559516758787753,
+        "maxErrorDegrees": 0.2829224605488958
+      },
+      {
+        "trial": "turn_90",
+        "rmseDegrees": 0.45711463198178104,
+        "maxErrorDegrees": 2.5049198558141765
+      },
+      {
+        "trial": "turn_180",
+        "rmseDegrees": 1.2096715703559644,
+        "maxErrorDegrees": 4.272888186018598
+      },
+      {
+        "trial": "turn_-90",
+        "rmseDegrees": 0.15772105985000753,
+        "maxErrorDegrees": 0.6138020045744762
+      }
+    ],
+    "implementation": "shortest-arc exponential response calibrated to measured curve; engine angular-force solver remains an approximation"
+  },
+  "air": {
+    "accelerationStudsPerSecondSquared": 143.2911330890848,
+    "sampleMin": 132.68298234944297,
+    "sampleMax": 159.2196106746388
+  },
+  "jump": {
+    "rootPeakHeightStuds": 7.528898477554321,
+    "observedFlightSeconds": 0.5324784014374018
+  },
+  "ground": {
+    "releaseDisplacementStuds": 0.11711502075195312
+  }
+}

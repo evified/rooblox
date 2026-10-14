@@ -1,0 +1,163 @@
+{
+  "profile": [
+    {
+      "fps": 30,
+      "x": -11.230890749348795,
+      "z": -11.230890749348795,
+      "yaw": 0.7852761725424744,
+      "speed": 16
+    },
+    {
+      "fps": 60,
+      "x": -11.230890749348795,
+      "z": -11.230890749348795,
+      "yaw": 0.7852761725424744,
+      "speed": 16
+    },
+    {
+      "fps": 120,
+      "x": -11.230890749348795,
+      "z": -11.230890749348795,
+      "yaw": 0.7852761725424744,
+      "speed": 16
+    },
+    {
+      "fps": 240,
+      "x": -11.230890749348795,
+      "z": -11.230890749348795,
+      "yaw": 0.7852761725424744,
+      "speed": 16
+    }
+  ],
+  "firstYaw": 0.21360679796665177,
+  "finalYaw": 1.57058552325766,
+  "wrapStep": 0.0047468177325922225,
+  "walkDistance": 15.882878015259612,
+  "walkSpeed": 16,
+  "releaseSpeed": 9.819700002670288,
+  "stopDistance": 0.11712198474037372,
+  "firstAirVelocity": -13.616666585206985,
+  "jumpPeak": 7.535578640074493,
+  "jumpTime": 0.5583333333333326,
+  "heldJumps": 4,
+  "cameraFixtures": [
+    {
+      "fps": 30,
+      "distance": 19.74999999988846,
+      "goal": 19.75,
+      "target": [
+        0,
+        4.5,
+        0
+      ]
+    },
+    {
+      "fps": 60,
+      "distance": 19.749999999888455,
+      "goal": 19.75,
+      "target": [
+        0,
+        4.5,
+        0
+      ]
+    },
+    {
+      "fps": 120,
+      "distance": 19.74999999988846,
+      "goal": 19.75,
+      "target": [
+        0,
+        4.5,
+        0
+      ]
+    }
+  ],
+  "sensitivity": {
+    "yaw": -0.8727000094950199,
+    "pitch": 0.9337993824645336
+  },
+  "maxPitch": 1.3962634015954636,
+  "firstPerson": {
+    "goal": 0.5,
+    "first": true,
+    "opacity": 0
+  },
+  "keyframes": 3006,
+  "maxPoseError": 0,
+  "nativeTurn90Comparison": {
+    "rmseDegrees": 0.45711463198178104,
+    "maxErrorDegrees": 2.5049198558141765,
+    "pipelineAlignmentSeconds": 0.019399999999999997
+  },
+  "nativeGroundReleaseComparison": {
+    "nativeStopDistance": 0.11711502075195312,
+    "browserStopDistance": 0.11712198474037372,
+    "absoluteDifferenceStuds": 6.963988420594092e-06,
+    "scope": "Velocity gain/cap at 1/120s inferred from phase-aligned Studio samples; flat R6 scope."
+  },
+  "phaseAlignedGroundTraces": [
+    {
+      "trial": "start_forward",
+      "maxPositionErrorStuds": 7.136446210775915e-05,
+      "maxVelocityErrorStudsPerSecond": 5.565830356601964e-07,
+      "commandDelaySeconds": 0.01666666753590107
+    },
+    {
+      "trial": "stop_forward",
+      "maxPositionErrorStuds": 6.963988418859368e-06,
+      "maxVelocityErrorStudsPerSecond": 3.977049869985372e-10,
+      "commandDelaySeconds": 0.01666666753590107
+    },
+    {
+      "trial": "turn_90",
+      "maxPositionErrorStuds": 7.136446210775915e-05,
+      "maxVelocityErrorStudsPerSecond": 5.565830356601964e-07,
+      "commandDelaySeconds": 0.01666666753590107
+    },
+    {
+      "trial": "stop_left",
+      "maxPositionErrorStuds": 6.963988418859368e-06,
+      "maxVelocityErrorStudsPerSecond": 6.726287616037404e-08,
+      "commandDelaySeconds": 0.01666666753590107
+    },
+    {
+      "trial": "turn_diagonal",
+      "maxPositionErrorStuds": 0.00024335160752642304,
+      "maxVelocityErrorStudsPerSecond": 1.1551579849378635e-06,
+      "commandDelaySeconds": 0.01666666753590107
+    },
+    {
+      "trial": "stop_diagonal",
+      "maxPositionErrorStuds": 1.3406603079479803e-06,
+      "maxVelocityErrorStudsPerSecond": 1.1551579849378635e-06,
+      "commandDelaySeconds": 0.01666666753590107
+    }
+  ],
+  "nativeJumpComparison": {
+    "nativePeak": 7.528898477554321,
+    "browserPeak": 7.535578640074493,
+    "absoluteDifferenceStuds": 0.006680162520171784
+  },
+  "pageErrors": [],
+  "externalRequests": [],
+  "websockets": [],
+  "menuOptionsExercised": 25,
+  "chatPlayer1LiteralMarkup": true,
+  "chatKeyboardIsolation": true,
+  "emoteCommand": true,
+  "menuResetSettings": true,
+  "clipboard": true,
+  "bubbleExpiryAndCap": true,
+  "deathRespawn": true,
+  "mobileControlsAndLayout": true,
+  "referenceChatRectangle": {
+    "x": 10,
+    "y": 81,
+    "width": 594,
+    "height": 368
+  },
+  "rightMouseSensitivity": true,
+  "shiftLockToggle": true,
+  "bubbleDistanceAndBehindCamera": true,
+  "historyScrollPreserved": true
+}

@@ -1,0 +1,1439 @@
+{
+  "settings": {
+    "ControlMode": "Enum.ControlMode.Classic",
+    "RotationType": "Enum.RotationType.MovementRelative",
+    "TouchCameraMovementMode": "Enum.TouchCameraMovementMode.Default",
+    "MouseSensitivity": 1,
+    "ComputerCameraMovementMode": "Enum.ComputerCameraMovementMode.Default",
+    "ComputerMovementMode": "Enum.ComputerMovementMode.Default"
+  },
+  "bindings": [
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraZoomAction",
+      "name": "CameraZoomAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction1D"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraZoomAction.TrackpadBinding",
+      "name": "TrackpadBinding",
+      "KeyCode": "Enum.KeyCode.TrackpadPinch",
+      "Scale": -1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraZoomAction.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 6,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraZoomAction.MouseBinding",
+      "name": "MouseBinding",
+      "KeyCode": "Enum.KeyCode.MouseWheel",
+      "Scale": -1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraZoomAction.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.TouchPinch",
+      "Scale": -0.03999999910593033,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraGamepadZoomAction",
+      "name": "CameraGamepadZoomAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraGamepadZoomAction.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonR3",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": false,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.MouseLockSwitchAction",
+      "name": "MouseLockSwitchAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.MouseLockSwitchAction.KeyboardPrimaryBinding",
+      "name": "KeyboardPrimaryBinding",
+      "KeyCode": "Enum.KeyCode.LeftShift",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.MouseLockSwitchAction.KeyboardSecondaryBinding",
+      "name": "KeyboardSecondaryBinding",
+      "KeyCode": "Enum.KeyCode.RightShift",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": false,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraGamepadResetAction",
+      "name": "CameraGamepadResetAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraGamepadResetAction.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonL3",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraAction",
+      "name": "CameraAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction3D"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraAction.CameraScriptableBinding",
+      "name": "CameraScriptableBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Scriptable",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraPanActiveAction",
+      "name": "CameraPanActiveAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraPanActiveAction.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.TouchPosition",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraPanActiveAction.MouseBinding",
+      "name": "MouseBinding",
+      "KeyCode": "Enum.KeyCode.MouseRightButton",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraRotationAction",
+      "name": "CameraRotationAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction2D"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraRotationAction.MouseBinding",
+      "name": "MouseBinding",
+      "KeyCode": "Enum.KeyCode.MouseDelta",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        0.008727000094950199,
+        0.006719999946653843
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraRotationAction.MicroGamepadBinding",
+      "name": "MicroGamepadBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        4.189000129699707,
+        -3.2249999046325684
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraRotationAction.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 2,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraRotationAction.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.TouchDelta",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        0.01744999922811985,
+        0.01152000017464161
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraRotationAction.TrackpadBinding",
+      "name": "TrackpadBinding",
+      "KeyCode": "Enum.KeyCode.TrackpadPan",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        0.12217000126838684,
+        0.09407000243663788
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraRotationAction.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.Thumbstick2",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        4.189000129699707,
+        -3.2249999046325684
+      ]
+    },
+    {
+      "Enabled": false,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraToggleAction",
+      "name": "CameraToggleAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CameraContext.CameraToggleAction.MouseBinding",
+      "name": "MouseBinding",
+      "KeyCode": "Enum.KeyCode.MouseRightButton",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction9",
+      "name": "AbilityAction9",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction9.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.F",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction9.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.DPadLeft",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction9.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": false,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.ClickToMoveAction",
+      "name": "ClickToMoveAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.ClickToMoveAction.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.TouchPosition",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.ClickToMoveAction.MouseBinding",
+      "name": "MouseBinding",
+      "KeyCode": "Enum.KeyCode.MouseRightButton",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.RotationAction",
+      "name": "RotationAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.RotationAction.RotationScriptableBinding",
+      "name": "RotationScriptableBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Scriptable",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction6",
+      "name": "AbilityAction6",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction6.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction6.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.Q",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction6.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonY",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.OverflowAction3",
+      "name": "OverflowAction3",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.OverflowAction3.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction4",
+      "name": "AbilityAction4",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction4.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.R",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction4.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction4.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonX",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.OverflowAction1",
+      "name": "OverflowAction1",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.OverflowAction1.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction7",
+      "name": "AbilityAction7",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction7.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.X",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction7.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction7.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonR1",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction5",
+      "name": "AbilityAction5",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction5.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.MouseLeftButton",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction5.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonR2",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction5.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction10",
+      "name": "AbilityAction10",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction10.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.DPadRight",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction10.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.G",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction10.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction11",
+      "name": "AbilityAction11",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction11.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.V",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction11.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction11.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.DPadDown",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction3",
+      "name": "AbilityAction3",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction3.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.LeftControl",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction3.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction3.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonB",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.OverflowAction2",
+      "name": "OverflowAction2",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.OverflowAction2.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.ClickToMovePositionAction",
+      "name": "ClickToMovePositionAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.ViewportPosition"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.ClickToMovePositionAction.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.TouchPosition",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.ClickToMovePositionAction.MouseBinding",
+      "name": "MouseBinding",
+      "KeyCode": "Enum.KeyCode.MousePosition",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.JumpAction",
+      "name": "JumpAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.JumpAction.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.JumpAction.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.Space",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.JumpAction.MicroGamepadBinding",
+      "name": "MicroGamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonCenter",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.JumpAction.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonA",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.JumpAction.ClickToMoveScriptableBinding",
+      "name": "ClickToMoveScriptableBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Scriptable",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction",
+      "name": "MoveAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction2D"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction.DynamicThumbstickScriptableBinding",
+      "name": "DynamicThumbstickScriptableBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Scriptable",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction.KeyboardSecondaryBinding",
+      "name": "KeyboardSecondaryBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction.ClickToMoveScriptableBinding",
+      "name": "ClickToMoveScriptableBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Scriptable",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction.MicroGamepadBinding",
+      "name": "MicroGamepadBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction.KeyboardPrimaryBinding",
+      "name": "KeyboardPrimaryBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.Thumbstick1",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.MoveAction.ClassicThumbstickScriptableBinding",
+      "name": "ClassicThumbstickScriptableBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Scriptable",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction1",
+      "name": "AbilityAction1",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction1.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.Space",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction1.MicroGamepadBinding",
+      "name": "MicroGamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonCenter",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction1.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonA",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction1.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction8",
+      "name": "AbilityAction8",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction8.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonL2",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction8.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction8.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.C",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction2",
+      "name": "AbilityAction2",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction2.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.LeftShift",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction2.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.ButtonL1",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.CharacterContext.AbilityAction2.TouchBinding",
+      "name": "TouchBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": false,
+      "path": "StarterPlayer.PlayerModule.InputContexts.TransformerContext.ThumbstickAction",
+      "name": "ThumbstickAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.ViewportPosition"
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.VehicleContext.ThrottleAction",
+      "name": "ThrottleAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction1D"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.VehicleContext.ThrottleAction.GamepadBinding",
+      "name": "GamepadBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.PlayerModule.InputContexts.VehicleContext.SteerAction",
+      "name": "SteerAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction1D"
+    },
+    {
+      "path": "StarterPlayer.PlayerModule.InputContexts.VehicleContext.SteerAction.KeyboardBinding",
+      "name": "KeyboardBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamToggleContext.FreecamToggleAction",
+      "name": "FreecamToggleAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamToggleContext.FreecamToggleAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.P",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.PanAction",
+      "name": "PanAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction2D"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.PanAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.MouseDelta",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        0.000818123109638691,
+        -0.000818123109638691
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.PanAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.TrackpadPan",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        0.011453723534941673,
+        -0.011453723534941673
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.PanAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.Thumbstick2",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        0.39269909262657166,
+        0.39269909262657166
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.MovementMoveAction",
+      "name": "MovementMoveAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction2D"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.MovementMoveAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.MovementMoveAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.Thumbstick1",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.MovementElevateAction",
+      "name": "MovementElevateAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction1D"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.MovementElevateAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.MovementElevateAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.FovAction",
+      "name": "FovAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction1D"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.FovAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.MouseWheel",
+      "Scale": -0.016669999808073044,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.FovAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.TrackpadPinch",
+      "Scale": -0.00800000037997961,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.FovAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 0.25,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ShiftAction",
+      "name": "ShiftAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ShiftAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.LeftShift",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ShiftAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.RightShift",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.TiltAction",
+      "name": "TiltAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction1D"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.TiltAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.TiltAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeToggleAction",
+      "name": "ModeToggleAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeToggleAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.Up",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeToggleAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.DPadUp",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeNextAction",
+      "name": "ModeNextAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Bool"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeNextAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.Down",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeNextAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.DPadDown",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "Enabled": true,
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeAxisAction",
+      "name": "ModeAxisAction",
+      "class": "InputAction",
+      "Type": "Enum.InputActionType.Direction1D"
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeAxisAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    },
+    {
+      "path": "StarterPlayer.FreecamInput.FreecamInputContext.ModeAxisAction.InputBinding",
+      "name": "InputBinding",
+      "KeyCode": "Enum.KeyCode.None",
+      "Scale": 1,
+      "class": "InputBinding",
+      "Type": "Enum.InputBindingType.Automatic",
+      "Vector2Scale": [
+        1,
+        1
+      ]
+    }
+  ],
+  "scripts": [
+    "DynamicThumbstick",
+    "TouchJump",
+    "CameraUtils",
+    "ActionController",
+    "TransparencyController"
+  ]
+}

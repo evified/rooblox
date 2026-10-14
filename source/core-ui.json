@@ -1,0 +1,1828 @@
+[
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout",
+    "name": "appLayout",
+    "transparency": 1,
+    "size": [
+      767.2000122070312,
+      397.20001220703125
+    ],
+    "class": "Frame",
+    "bg": [
+      0,
+      0,
+      0
+    ],
+    "pos": [
+      8,
+      4
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.topBorder",
+    "class": "ImageLabel",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "topBorder",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "rbxasset://textures/ui/TopRoundedRect8px.png",
+    "size": [
+      767.2000122070312,
+      8
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      8,
+      4
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow",
+    "name": "chatInputRow",
+    "transparency": 0.30000001192092896,
+    "size": [
+      767.2000122070312,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.09803922474384308,
+      0.10588236153125763,
+      0.11372549831867218
+    ],
+    "pos": [
+      8,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea",
+    "name": "fillArea",
+    "transparency": 1,
+    "size": [
+      751.2000122070312,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar",
+    "name": "chatInputBar",
+    "transparency": 1,
+    "size": [
+      751.2000122070312,
+      47.400001525878906
+    ],
+    "class": "Frame",
+    "bg": [
+      0.09803922474384308,
+      0.10588236153125763,
+      0.11372549831867218
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2",
+    "name": "ChatInputBarV2",
+    "transparency": 1,
+    "size": [
+      751.2000122070312,
+      46.400001525878906
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container",
+    "name": "Container",
+    "transparency": 1,
+    "size": [
+      751.2000122070312,
+      46.400001525878906
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup",
+    "name": "InputGroup",
+    "transparency": 0.20000000298023224,
+    "size": [
+      751.2000122070312,
+      46.400001525878906
+    ],
+    "class": "Frame",
+    "bg": [
+      0.09803921729326248,
+      0.10588235408067703,
+      0.11372549086809158
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.TextContainer",
+    "name": "TextContainer",
+    "transparency": 1,
+    "size": [
+      711.2000122070312,
+      46.400001525878906
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.TextContainer.TextBoxContainer",
+    "name": "TextBoxContainer",
+    "transparency": 1,
+    "size": [
+      679.2000122070312,
+      26.399999618530273
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      38,
+      419.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.TextContainer.TextBoxContainer.TextBox",
+    "class": "TextBox",
+    "transparency": 1,
+    "name": "TextBox",
+    "textSize": 27,
+    "text": "",
+    "size": [
+      679.2000122070312,
+      26.399999618530273
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      38,
+      419.20001220703125
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.TextContainer.TargetChannelChip",
+    "class": "TextButton",
+    "transparency": 1,
+    "name": "TargetChannelChip",
+    "textSize": 14,
+    "text": "",
+    "size": [
+      0,
+      26.400001525878906
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      30,
+      419.20001220703125
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.TextContainer.WaveformOverlay",
+    "name": "WaveformOverlay",
+    "transparency": 1,
+    "size": [
+      687.2000122070312,
+      27
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      30,
+      418.9000244140625
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.TextContainer.WaveformOverlay.List",
+    "name": "List",
+    "transparency": 1,
+    "size": [
+      687.2000122070312,
+      27
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      30,
+      418.9000244140625
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown",
+    "name": "StopCountdown",
+    "transparency": 0,
+    "size": [
+      0,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress",
+    "name": "Progress",
+    "transparency": 0,
+    "size": [
+      32,
+      32
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.RightGradient",
+    "name": "RightGradient",
+    "transparency": 0,
+    "size": [
+      16,
+      32
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      34,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.RightGradient.Image",
+    "class": "ImageLabel",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 0,
+    "name": "Image",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "rbxasset://textures/ui/Controls/RadialFill.png",
+    "size": [
+      32,
+      32
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.LeftGradient",
+    "name": "LeftGradient",
+    "transparency": 0,
+    "size": [
+      16,
+      32
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.LeftGradient.Image",
+    "class": "ImageLabel",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 0,
+    "name": "Image",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "rbxasset://textures/ui/Controls/RadialFill.png",
+    "size": [
+      32,
+      32
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.StartCap",
+    "name": "StartCap",
+    "transparency": 0,
+    "size": [
+      32,
+      32
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.StartCap.Cap",
+    "name": "Cap",
+    "transparency": 0,
+    "size": [
+      2.7586207389831543,
+      2.7586207389831543
+    ],
+    "class": "Frame",
+    "bg": [
+      0.9686274528503418,
+      0.9686274528503418,
+      0.9725490212440491
+    ],
+    "pos": [
+      32.620689392089844,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.EndCap",
+    "name": "EndCap",
+    "transparency": 0,
+    "size": [
+      32,
+      32
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Progress.EndCap.Cap",
+    "name": "Cap",
+    "transparency": 0,
+    "size": [
+      2.7586207389831543,
+      2.7586207389831543
+    ],
+    "class": "Frame",
+    "bg": [
+      0.9686274528503418,
+      0.9686274528503418,
+      0.9725490212440491
+    ],
+    "pos": [
+      32.620689392089844,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Icon",
+    "class": "ImageButton",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "Icon",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "",
+    "size": [
+      32,
+      32
+    ],
+    "bg": [
+      0,
+      0,
+      0
+    ],
+    "pos": [
+      18,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.StopCountdown.Icon.Icon",
+    "class": "TextLabel",
+    "transparency": 0,
+    "name": "Icon",
+    "textSize": 20,
+    "text": "stop-small",
+    "size": [
+      20,
+      20
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      24,
+      415.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.SendButtonContainer",
+    "name": "SendButtonContainer",
+    "transparency": 0,
+    "size": [
+      36,
+      36
+    ],
+    "class": "CanvasGroup",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      729.2000122070312,
+      414.4000244140625
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.SendButtonContainer.SendButton",
+    "class": "ImageButton",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "SendButton",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "",
+    "size": [
+      32,
+      32
+    ],
+    "bg": [
+      0,
+      0,
+      0
+    ],
+    "pos": [
+      731.2000122070312,
+      416.4000244140625
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.SendButtonContainer.SendButton.Icon",
+    "class": "TextLabel",
+    "transparency": 0,
+    "name": "Icon",
+    "textSize": 20,
+    "text": "microphone",
+    "size": [
+      20,
+      20
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      737.2000122070312,
+      422.4000244140625
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.ChatInputBarV2.Container.InputGroup.SendButtonContainer.InputTarget",
+    "class": "TextButton",
+    "transparency": 1,
+    "name": "InputTarget",
+    "textSize": 8,
+    "text": "",
+    "size": [
+      32,
+      32
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      731.2000122070312,
+      416.4000244140625
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.AutocompleteDropdown",
+    "name": "AutocompleteDropdown",
+    "transparency": 1,
+    "size": [
+      713.6400146484375,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.AutocompleteDropdown.ScrollBarFrame",
+    "name": "ScrollBarFrame",
+    "transparency": 0,
+    "size": [
+      713.6400146484375,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.09803921729326248,
+      0.10588235408067703,
+      0.11372549086809158
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.AutocompleteDropdown.ScrollBarFrame.ScrollViewFrame",
+    "name": "ScrollViewFrame",
+    "transparency": 1,
+    "size": [
+      713.6400146484375,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.AutocompleteDropdown.ScrollBarFrame.ScrollViewFrame.ScrollView",
+    "name": "ScrollView",
+    "transparency": 1,
+    "size": [
+      709.6400146484375,
+      0
+    ],
+    "class": "ScrollingFrame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.ExperienceChat.appLayout.chatInputRow.fillArea.chatInputBar.AutocompleteDropdown.ScrollBarFrame.ScrollViewFrame.ScrollView.OffsetFrame",
+    "name": "OffsetFrame",
+    "transparency": 1,
+    "size": [
+      717.6400146484375,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      409.20001220703125
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.bottomBorder",
+    "class": "ImageLabel",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "bottomBorder",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "rbxasset://textures/ui/BottomRoundedRect8px.png",
+    "size": [
+      767.2000122070312,
+      8
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      8,
+      464.5999755859375
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.ExperienceChat.appLayout.topPadding",
+    "name": "topPadding",
+    "transparency": 0.30000001192092896,
+    "size": [
+      767.2000122070312,
+      8
+    ],
+    "class": "Frame",
+    "bg": [
+      0.09803922474384308,
+      0.10588236153125763,
+      0.11372549831867218
+    ],
+    "pos": [
+      8,
+      4
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarScrim.TopBarScrim",
+    "name": "TopBarScrim",
+    "transparency": 0.25,
+    "size": [
+      1918,
+      1080
+    ],
+    "class": "Frame",
+    "bg": [
+      0.03921568766236305,
+      0.03921568766236305,
+      0.054901961237192154
+    ],
+    "pos": [
+      0,
+      -87
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder",
+    "name": "MenuIconHolder",
+    "transparency": 1,
+    "size": [
+      1918,
+      48
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      -48
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.CursorContainer",
+    "name": "CursorContainer",
+    "transparency": 0,
+    "size": [
+      0,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      -48
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.TriggerPoint",
+    "name": "TriggerPoint",
+    "transparency": 1,
+    "size": [
+      44,
+      48
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      -48
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.TriggerPoint.IconHitArea",
+    "class": "ImageButton",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 0.07999999821186066,
+    "name": "IconHitArea",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "",
+    "size": [
+      44,
+      44
+    ],
+    "bg": [
+      0.07058823853731155,
+      0.07058823853731155,
+      0.08235294371843338
+    ],
+    "pos": [
+      16,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.TriggerPoint.IconHitArea.ScalingIcon",
+    "class": "TextLabel",
+    "transparency": 1,
+    "name": "ScalingIcon",
+    "textSize": 24,
+    "text": "tilt",
+    "size": [
+      24,
+      24
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      26,
+      -36
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.TriggerPoint.IconHitArea.StateOverlayRound",
+    "name": "StateOverlayRound",
+    "transparency": 1,
+    "size": [
+      44,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      1,
+      1,
+      1
+    ],
+    "pos": [
+      16,
+      -46
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.FoundationCursorContainer",
+    "name": "FoundationCursorContainer",
+    "transparency": 0,
+    "size": [
+      0,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      -48
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.FoundationCursorContainer.SkinToneCircle Color",
+    "name": "SkinToneCircle Color",
+    "transparency": 1,
+    "size": [
+      -6,
+      -6
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      19,
+      -45
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.MenuIconHolder.FoundationCursorContainer.0 0 3 3 Color",
+    "name": "0 0 3 3 Color",
+    "transparency": 1,
+    "size": [
+      6,
+      6
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      13,
+      -51
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame",
+    "name": "UnibarLeftFrame",
+    "transparency": 1,
+    "size": [
+      1918,
+      48
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      -16,
+      -48
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu",
+    "name": "UnibarMenu",
+    "transparency": 1,
+    "size": [
+      96,
+      148
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      97,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2",
+    "name": "2",
+    "transparency": 1,
+    "size": [
+      96,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      97,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar",
+    "name": "Unibar",
+    "transparency": 1,
+    "size": [
+      96,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      97,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.2",
+    "name": "2",
+    "transparency": 0.07999999821186066,
+    "size": [
+      96,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.07058823853731155,
+      0.07058823853731155,
+      0.08235294371843338
+    ],
+    "pos": [
+      97,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3",
+    "name": "3",
+    "transparency": 1,
+    "size": [
+      96,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      97,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat",
+    "name": "chat",
+    "transparency": 1,
+    "size": [
+      44,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      145,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat.IntegrationIconFrame",
+    "name": "IntegrationIconFrame",
+    "transparency": 1,
+    "size": [
+      44,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      145,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat.IntegrationIconFrame.IntegrationIcon",
+    "class": "TextLabel",
+    "transparency": 1,
+    "name": "IntegrationIcon",
+    "textSize": 24,
+    "text": "speech-bubble-align-center",
+    "size": [
+      36,
+      36
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      149,
+      -42
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat.SelectedHighlighter",
+    "name": "SelectedHighlighter",
+    "transparency": 0.9200000166893005,
+    "size": [
+      36,
+      36
+    ],
+    "class": "Frame",
+    "bg": [
+      0.8156862854957581,
+      0.8509804010391235,
+      0.9843137264251709
+    ],
+    "pos": [
+      149,
+      -42
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat.Highlighter",
+    "name": "Highlighter",
+    "transparency": 0.9200000166893005,
+    "size": [
+      36,
+      36
+    ],
+    "class": "Frame",
+    "bg": [
+      0.8156862854957581,
+      0.8509804010391235,
+      0.9843137264251709
+    ],
+    "pos": [
+      149,
+      -42
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat.5",
+    "name": "5",
+    "transparency": 1,
+    "size": [
+      44,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      145,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.chat.IconHitArea_chat",
+    "class": "ImageButton",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "IconHitArea_chat",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "",
+    "size": [
+      36,
+      36
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      149,
+      -42
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot",
+    "name": "nine_dot",
+    "transparency": 1,
+    "size": [
+      44,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      101,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.IntegrationIconFrame",
+    "name": "IntegrationIconFrame",
+    "transparency": 1,
+    "size": [
+      44,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      101,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.IntegrationIconFrame.IntegrationIcon",
+    "name": "IntegrationIcon",
+    "transparency": 1,
+    "size": [
+      36,
+      36
+    ],
+    "class": "Frame",
+    "bg": [
+      0.8156862854957581,
+      0.8509804010391235,
+      0.9843137264251709
+    ],
+    "pos": [
+      105,
+      -42
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.IntegrationIconFrame.IntegrationIcon.Overflow",
+    "class": "TextLabel",
+    "transparency": 1,
+    "name": "Overflow",
+    "textSize": 24,
+    "text": "three-bars-horizontal",
+    "size": [
+      36,
+      36
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      105,
+      -42
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.IntegrationIconFrame.IntegrationIcon.Close",
+    "class": "TextLabel",
+    "transparency": 1,
+    "name": "Close",
+    "textSize": 1,
+    "text": "x",
+    "size": [
+      0,
+      0
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      123,
+      -24
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.SelectedHighlighter",
+    "name": "SelectedHighlighter",
+    "transparency": 0.9200000166893005,
+    "size": [
+      36,
+      36
+    ],
+    "class": "Frame",
+    "bg": [
+      0.8156862854957581,
+      0.8509804010391235,
+      0.9843137264251709
+    ],
+    "pos": [
+      105,
+      -42
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.Highlighter",
+    "name": "Highlighter",
+    "transparency": 0.9200000166893005,
+    "size": [
+      36,
+      36
+    ],
+    "class": "Frame",
+    "bg": [
+      0.8156862854957581,
+      0.8509804010391235,
+      0.9843137264251709
+    ],
+    "pos": [
+      105,
+      -42
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.5",
+    "name": "5",
+    "transparency": 1,
+    "size": [
+      44,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      101,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.Unibar.3.nine_dot.IconHitArea_nine_dot",
+    "class": "ImageButton",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "IconHitArea_nine_dot",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "",
+    "size": [
+      36,
+      36
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      105,
+      -42
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.FoundationCursorContainer",
+    "name": "FoundationCursorContainer",
+    "transparency": 0,
+    "size": [
+      0,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      97,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.FoundationCursorContainer.0 0 3 3 Color",
+    "name": "0 0 3 3 Color",
+    "transparency": 1,
+    "size": [
+      6,
+      6
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      94,
+      -49
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.2.FoundationCursorContainer.SkinToneCircle Color",
+    "name": "SkinToneCircle Color",
+    "transparency": 1,
+    "size": [
+      -6,
+      -6
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      100,
+      -43
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.UnibarMenu.SubMenuHost",
+    "name": "SubMenuHost",
+    "transparency": 1,
+    "size": [
+      0,
+      96
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      97,
+      6
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.HealthBar",
+    "name": "HealthBar",
+    "transparency": 1,
+    "size": [
+      220,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      1682,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.HealthBar.HealthBar",
+    "class": "ImageLabel",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "HealthBar",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "rbxasset://textures/ui/TopBar/HealthBarBaseTV.png",
+    "size": [
+      220,
+      16
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      1682,
+      -32
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.HealthBar.HealthBar.Fill",
+    "class": "ImageLabel",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "Fill",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "rbxasset://textures/ui/TopBar/HealthBarTV.png",
+    "size": [
+      220,
+      16
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      1682,
+      -32
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.UnibarLeftFrame.StackedElements",
+    "name": "StackedElements",
+    "transparency": 1,
+    "size": [
+      1805,
+      44
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      185,
+      -46
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.TopBarFrame",
+    "name": "TopBarFrame",
+    "transparency": 1,
+    "size": [
+      1918,
+      48
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      0,
+      -48
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.TopBarFrame.LeftFrame",
+    "name": "LeftFrame",
+    "transparency": 1,
+    "size": [
+      943,
+      48
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      -48
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.TopBarFrame.LeftFrame.Blank",
+    "name": "Blank",
+    "transparency": 1,
+    "size": [
+      83,
+      1
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      16,
+      -48
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.TopBarApp.FullScreenFrame",
+    "name": "FullScreenFrame",
+    "transparency": 1,
+    "size": [
+      1918,
+      1080
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      0,
+      -87
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.TopBarApp.FullScreenFrame.HurtOverlay",
+    "class": "ImageLabel",
+    "rect": [
+      0,
+      0
+    ],
+    "transparency": 1,
+    "name": "HurtOverlay",
+    "offset": [
+      0,
+      0
+    ],
+    "image": "rbxasset://textures/ui/TopBar/HurtOverlayAsset.png",
+    "size": [
+      1918,
+      1080
+    ],
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      0,
+      -87
+    ]
+  },
+  {
+    "visible": false,
+    "path": "CoreGui.TopBarApp.FoundationCursorContainer",
+    "name": "FoundationCursorContainer",
+    "transparency": 0,
+    "size": [
+      0,
+      0
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      0,
+      0
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.FoundationCursorContainer.0 8 5 3 Color",
+    "name": "0 8 5 3 Color",
+    "transparency": 1,
+    "size": [
+      10,
+      10
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      -5,
+      -5
+    ]
+  },
+  {
+    "visible": true,
+    "path": "CoreGui.TopBarApp.FoundationCursorContainer.0 8 3 3 Color",
+    "name": "0 8 3 3 Color",
+    "transparency": 1,
+    "size": [
+      6,
+      6
+    ],
+    "class": "Frame",
+    "bg": [
+      0.6392157077789307,
+      0.6352941393852234,
+      0.6470588445663452
+    ],
+    "pos": [
+      -3,
+      -3
+    ]
+  }
+]

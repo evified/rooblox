@@ -1,0 +1,293 @@
+{
+  "engineVersion": "0.742.0.7421053",
+  "capturedDate": "2026-10-13",
+  "sourceScope": "Native R6 clone, same Place1 flat baseplate; current Studio controller modules and attached user UI screenshot",
+  "movement": {
+    "groundStartResponse": [
+      [
+        0,
+        0
+      ],
+      [
+        0.016666666666666666,
+        0.7725375294685364
+      ],
+      [
+        0.03333333333333333,
+        0.9955018162727356
+      ],
+      [
+        0.05,
+        0.9999110698699951
+      ],
+      [
+        0.06666666666666667,
+        0.9999982714653015
+      ],
+      [
+        0.08333333333333333,
+        1.0
+      ],
+      [
+        0.1,
+        1.0
+      ],
+      [
+        0.11666666666666667,
+        1.0
+      ],
+      [
+        0.13333333333333333,
+        1.0
+      ]
+    ],
+    "groundStopResponse": [
+      [
+        0,
+        0
+      ],
+      [
+        0.016666666666666666,
+        0.772537499666214
+      ],
+      [
+        0.03333333333333333,
+        0.9955018404871225
+      ],
+      [
+        0.05,
+        0.9999110471690074
+      ],
+      [
+        0.06666666666666667,
+        0.9999982409226504
+      ],
+      [
+        0.08333333333333333,
+        0.9999999652135614
+      ],
+      [
+        0.1,
+        0.999999999312084
+      ],
+      [
+        0.11666666666666667,
+        0.9999999999863962
+      ],
+      [
+        0.13333333333333333,
+        0.999999999999731
+      ]
+    ],
+    "rotationRate": 8.77,
+    "observedCommandPipelineDelay": 0.019399999999999997,
+    "rotationFit": {
+      "responseRatePerSecond": 8.77,
+      "observedPipelineDelaySeconds": 0.019399999999999997,
+      "fitRMSEDegrees": 0.28377039599829224,
+      "validation": [
+        {
+          "trial": "turn_45",
+          "rmseDegrees": 0.09559516758787753,
+          "maxErrorDegrees": 0.2829224605488958
+        },
+        {
+          "trial": "turn_90",
+          "rmseDegrees": 0.45711463198178104,
+          "maxErrorDegrees": 2.5049198558141765
+        },
+        {
+          "trial": "turn_180",
+          "rmseDegrees": 1.2096715703559644,
+          "maxErrorDegrees": 4.272888186018598
+        },
+        {
+          "trial": "turn_-90",
+          "rmseDegrees": 0.15772105985000753,
+          "maxErrorDegrees": 0.6138020045744762
+        }
+      ],
+      "implementation": "shortest-arc exponential response calibrated to measured curve; engine angular-force solver remains an approximation"
+    },
+    "airAcceleration": 143.00000488758087,
+    "heightModeLaunchVelocity": 54.37960372610874,
+    "nativeJumpMeasuredPeak": 7.528898477554321,
+    "jumpBallisticRMSEStuds": 0.003406355801242753,
+    "jumpBallisticMaxErrorStuds": 0.0034072436292751362,
+    "modelNote": "Ground velocity gain/cap fitted to phase-aligned native samples at 1/120s, including exact displacement validation. Plugin command scheduling delay is excluded from browser input adapter. Turning remains a measured exponential fit; jump is ballistic fit with nominal property separate.",
+    "groundSolverFit": {
+      "stepSeconds": 0.008333333333333333,
+      "velocityGainPerSecond": 103.12500053227207,
+      "maxAcceleration": 741.6359996795654,
+      "source": "PreSimulation/PostSimulation captured stop_forward plus start/diagonal validation",
+      "derivation": "Two 1/120s updates explain first active-frame displacement=(v1+v2)/120; later 1/60s residual velocity ratio is retention\u00b2. Parameters inferred from saved samples, not public engine properties."
+    }
+  },
+  "camera": {
+    "defaultDistance": 12.5,
+    "initialPitch": 0.2617993877991494,
+    "maxPitch": 1.3962634015954636,
+    "subjectHeightAboveRoot": 1.5,
+    "firstPersonThreshold": 1,
+    "mouseLockOffset": 1.75,
+    "zoomSpringHz": 4.5,
+    "zoomCurveFactor": 0.5,
+    "mouseScale": [
+      0.008727000094950199,
+      0.006719999946653843
+    ],
+    "touchScale": [
+      0.01744999922811985,
+      0.01152000017464161
+    ],
+    "mouseSensitivity": 1,
+    "transparencyRate": 2.8,
+    "wheelAdapterPixelsPerStep": 100,
+    "note": "Constants directly captured from current BaseCamera/ClassicCamera/ZoomController/CameraInput/MouseLockController/TransparencyController. Wheel pixel conversion is a browser adapter choice."
+  },
+  "chat": {
+    "username": "Player1",
+    "runtimeConfiguration": {
+      "ChatWindowConfiguration": {
+        "Enabled": true,
+        "FontFace": {
+          "family": "rbxasset://fonts/families/BuilderSans.json",
+          "style": "Enum.FontStyle.Normal",
+          "weight": "Enum.FontWeight.Medium"
+        },
+        "TextColor3": [
+          1,
+          1,
+          1
+        ],
+        "WidthScale": 1,
+        "TextStrokeTransparency": 0.5,
+        "BackgroundTransparency": 0.3,
+        "HeightScale": 1,
+        "TextSize": 18,
+        "BackgroundColor3": [
+          0.09803921729326248,
+          0.10588235408067703,
+          0.11372549086809158
+        ]
+      },
+      "ChatInputBarConfiguration": {
+        "Enabled": true,
+        "FontFace": {
+          "family": "rbxasset://fonts/families/BuilderSans.json",
+          "style": "Enum.FontStyle.Normal",
+          "weight": "Enum.FontWeight.Medium"
+        },
+        "TextColor3": [
+          1,
+          1,
+          1
+        ],
+        "TextStrokeTransparency": 0.5,
+        "KeyboardKeyCode": "Enum.KeyCode.Slash",
+        "BackgroundTransparency": 0.2,
+        "PlaceholderColor3": [
+          0.6980392336845398,
+          0.6980392336845398,
+          0.6980392336845398
+        ],
+        "AutocompleteEnabled": true,
+        "TextSize": 18,
+        "BackgroundColor3": [
+          0.09803921729326248,
+          0.10588235408067703,
+          0.11372549086809158
+        ]
+      },
+      "BubbleChatConfiguration": {
+        "Enabled": true,
+        "FontFace": {
+          "family": "rbxasset://fonts/families/BuilderSans.json",
+          "style": "Enum.FontStyle.Normal",
+          "weight": "Enum.FontWeight.Medium"
+        },
+        "TextColor3": [
+          0.2235294133424759,
+          0.23137255012989044,
+          0.239215686917305
+        ],
+        "MaxBubbles": 3,
+        "MinimizeDistance": 40,
+        "MaxDistance": 100,
+        "BackgroundTransparency": 0.1,
+        "BubbleDuration": 15,
+        "VerticalStudsOffset": 0,
+        "TextSize": 20,
+        "BackgroundColor3": [
+          0.9803921580314636,
+          0.9803921580314636,
+          0.9803921580314636
+        ]
+      },
+      "ChannelTabsConfiguration": {
+        "Enabled": false,
+        "FontFace": {
+          "family": "rbxasset://fonts/families/BuilderSans.json",
+          "style": "Enum.FontStyle.Normal",
+          "weight": "Enum.FontWeight.Bold"
+        },
+        "HoverBackgroundColor3": [
+          0.4901960790157318,
+          0.4901960790157318,
+          0.4901960790157318
+        ],
+        "TextStrokeTransparency": 1,
+        "BackgroundTransparency": 0,
+        "SelectedTabTextColor3": [
+          1,
+          1,
+          1
+        ],
+        "TextColor3": [
+          0.686274528503418,
+          0.686274528503418,
+          0.686274528503418
+        ],
+        "TextSize": 18,
+        "BackgroundColor3": [
+          0.09803921729326248,
+          0.10588235408067703,
+          0.11372549086809158
+        ]
+      }
+    },
+    "referenceLayout": {
+      "topbar": [
+        14,
+        18,
+        120,
+        55
+      ],
+      "chat": [
+        10,
+        81,
+        594,
+        368
+      ],
+      "tabsHeight": 49,
+      "footerHeight": 94
+    },
+    "historyLimit": 200,
+    "maxMessageCharacters": 200,
+    "note": "Here/Global/Friends and SVG icon shapes follow user screenshot. Only Here is local functional chat; microphone/global/friends/summary services are absent. History/message bounds are local implementation policy."
+  },
+  "sourceHashes": {
+    "ActionController.luau": "30ae61f3261257842f371bca826ea62c12e8511ba0e17e57c07b33bb60a43d80",
+    "BaseCamera.luau": "8d405cd459ed30064e6639902c9b16f194b7a823125f93f2b89e87292c0621d5",
+    "CameraInput.luau": "4f8fb80e6a52b8e918f2a83f6d92accb0fcc9bf8e4187fb613525561ac80795c",
+    "CameraUtils.luau": "d0f3e906706d19fea0cc9ef21be55ac5c90bc734e92f566652966a8986f099e9",
+    "ClassicCamera.luau": "27d2c1403ea75f2d03a2e0f793a3432bb61d01735ba30d9c5aab70b1d2d2f09c",
+    "ControlModule.luau": "31d673921c229fbe835963b858b7ef910b74d3b0a731f1607e58e5ae1f97b492",
+    "DynamicThumbstick.luau": "c0b9bb6a319fe24edd8ecc21077eb78d3613dcb88172a14212d27114f2f7c5b4",
+    "MouseLockController.luau": "fff07196a86a1725beaf3b868479d1556db943e0c6a4dfdb579720013ffc888d",
+    "PlayerModule.luau": "a21a686243e21241fede09615d8dc7b1a47074bd19aa91cf61580c291ba272e5",
+    "TouchJump.luau": "751fcdeb78368e27dc3b85b563f396f71d760b1263ec942b5946a05bdef6f626",
+    "TransparencyController.luau": "1a7b867fe469b72cb8cdb83e46c0c6b215c08533ee44c65a1582b8120d8af331",
+    "ZoomController.luau": "07b53a8fd0784966d0cc317c02bb28cdd7fc717d6e209bb5df6e9313776dd392"
+  }
+}
